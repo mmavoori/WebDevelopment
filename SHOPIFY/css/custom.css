@@ -1,0 +1,162 @@
+.sidebar1 {
+	float: left;
+	width: 20%;
+	padding-bottom: 1%;
+}
+.content {
+	padding: 50px 0;
+	width: 50%;
+	float: left;
+}
+aside {
+	float: right;
+	width: 20%;
+	padding: 50px 0;
+}
+
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+nav ul{
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #FFFFFF; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+nav li {
+	border-bottom: 1px solid #FFFFFF;
+	color:#FFFFFF; /* this creates the button separation */
+}
+nav a, nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+}
+nav a:hover, nav a:active, nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	
+	color: #FFFFFF;
+}
+
+/* ~~ The footer ~~ */
+footer {
+	padding: 10px 0;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+/* ~~ Miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty block element as the final element following the last floated block (within the .container) if the footer is removed or taken out of the .container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+#a{
+    text-align: center;
+	color:#FFFFFF;
+}
+
+#i1{
+    margin-center: 20%;
+}
+#i2{
+    margin-center: 40.0001%;
+}
+
+
+#i3{
+    margin-center: 20.0002%;
+}
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, section, footer, aside, article, figure {
+	display: block;
+}
+
+.form-signin-heading{
+	 padding: 0 60px;
+	 top:7%;
+}
+.heading{
+	  padding: 0 30px;
+	  
+}
+.admin-dropdown{
+	padding: 0 400px;
+	position:absolute;
+	top:-4%;
+}
+.topcorner{
+    position:absolute;
+    top:-1%;
+    right:2%;
+	
+ }
+ .topcorner1{
+    position:absolute;
+    top:25%;
+    right:15%;
+	
+ }
+.tool{
+  position:absolute;
+    top:-2%;
+ 
+}
+.search{
+    position:absolute;
+    top:0%;
+    right:2%;
+	
+ }
+.admin_left{
+	float:left; width:25%; color:#000000;
+	height: 100%;
+	font-family: Papyrus, Lucida Sans Unicode, Geneva, sans-serif;
+	font-weight:bold;
+	font-size:30px;
+	font-style:italic;
+}
+.admin_right{
+	float:right; width:75%; color:#000000;
+	height: 100%;
+	font-family: Papyrus, Lucida Sans Unicode, Geneva, sans-serif;
+	font-weight:bold;
+	font-size:20px;
+	font-style:normal;
+}
+ #container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+#top_div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 74%;
+    background-color:#2ba6cb;
+    text-align:center;
+}
+
+#bottom_div {
+    position: absolute;
+    top: 26%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align:center;
+    color:#000000;
+}
